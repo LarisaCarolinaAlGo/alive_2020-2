@@ -1,0 +1,123 @@
+html { height: 100%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  background-color: hsl(210,50%,20%);
+	 background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+	}
+
+.txt[contenteditable] {
+  outline: none;
+}
+
+/* Box ------------------------------------------------------ */
+
+#box {
+  padding: 50px;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+
+/* txt ------------------------------------------------------ */
+
+.txt {
+  color: hsla(0,0%,0%,0);
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+	}
+	@-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 20px; } } /* FF fix */
+
+#box:hover .txt {
+		text-shadow: #fff 0 0 5px;
+		transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* ♥ ------------------------------------------------------ */
+
+.corazon {
+  margin: 0 10px;
+  color: hsla(0,0%,0%,0);
+  text-shadow: red 0 0 5px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+	}
+
+
+
+
+
+  /*..........................CSS de la pagina....................................
+#background{
+  background-color: #336699; /* For browsers that do not support gradients
+}*/
+
+main{
+  height: 250px;
+  display: flex;
+}
+.cuadro1{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  width: 33%;
+  justify-content: flex-end;
+}
+
+.player1{/*texto jugador 1*/
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+}
+/*Tiempo */
+.cuadro_centro{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  height: 33%;
+  justify-content: flex-end;
+}
+.timer{/*texto jugador 1*/
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+}
+.tiempo{
+  width: 25px;
+  height: 20px;
+}
+.menos{
+  background-color: #E50029;
+}
+.mas{
+  background-color: #F4DD00;
+}
+
+.cuadro3{
+  display: flex;
+  align-items: baseline;
+  margin-top: 100px;
+  height: 33%;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.player2{/*texto jugador 2*/
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+.cuadro_abajo{
+  float: left;
+  height: 33%;
+  width: 100%;
+  margin-top: 250px;
+}
