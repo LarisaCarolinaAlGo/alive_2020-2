@@ -4,16 +4,44 @@
   grid-template-rows: 150px 150px 150px;
 }
 
-.elementosAbajo{
+.elemento:hover{
+  transform: scale(1.1);
+  border: none;
+}
+
+.horizontal {
+  border-top: solid;
   border-bottom: solid;
 }
 
-.elementosDerechaAbajo{
-  border-right:  solid;
-  border-bottom: solid;
+.vertical{
+  border-left: solid;
+  border-right: solid;
 }
 
+.main-container{
+  display: flex;
+}
 
-.elementosDerecha{
-  border-right:  solid;
+.casilla-morada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  color: black;
+  text-align: center;
+
+  font-family: algerian;
+  font-size: 70px;
+}
+
+.casilla-verde{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: black;
+  text-align: center;
+  font-family: algerian;
+  font-size: 70px;
 }

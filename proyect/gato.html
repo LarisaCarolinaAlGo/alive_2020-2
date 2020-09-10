@@ -3,22 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Tic tac TOE</title>
+    <script type="text/javascript" src="./gato.js"></script>
     <link rel="stylesheet" href="./gato.css">
   </head>
   <body>
-    <nav>
-
-    </nav>
-    <div class="grid-container">
-      <div class="elementosDerechaAbajo">X</div>
-      <div class="elementosDerechaAbajo">X</div>
-      <div class="elementosAbajo">0</div>
-      <div class="elementosDerechaAbajo">X</div>
-      <div class="elementosDerechaAbajo">0</div>
-      <div class="elementosAbajo">X</div>
-      <div class="elementosDerecha">X</div>
-      <div class="elementosDerecha">0</div>
-      <div class="elementos_9">0</div>
+    <button type="button" name="button">Reiniciar</button>
+    <div class="main-container">
+      <div class="grid-container">
+        <div class="elemento"  id="casilla1" onclick="marcarCasilla(1);"  ><p></p></div>
+        <div class="elemento vertical" id="casilla2" onclick="marcarCasilla(2);" ><p></p></div>
+        <div class="elemento" id="casilla3" onclick="marcarCasilla(3);"><p></p></div>
+        <div class="elemento horizontal" id="casilla4" onclick="marcarCasilla(4);"><p></p></div>
+        <div class="elemento vertical horizontal" id="casilla5" onclick="marcarCasilla(5);"><p></p></div>
+        <div class="elemento horizontal" id="casilla6" onclick="marcarCasilla(6);"><p></p></div>
+        <div class="elemento" id="casilla7" onclick="marcarCasilla(7);"><p></p></div>
+        <div class="elemento vertical" id="casilla8" onclick="marcarCasilla(8);"><p></p></div>
+        <div class="elemento " id="casilla9" onclick="marcarCasilla(9);"><p></p></div>
+      </div>
+       <div>
+         <p>felicidades</p>
+       </div>
+     </div>
+    <div >
+      <p>Turno del jugador <span id="jugadorEnTurno">1</span></p>
     </div>
+    <button type="button" name="button">VS CPU</button>
+
   </body>
 </html>

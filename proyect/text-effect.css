@@ -6,11 +6,11 @@ body {
   align-items: center;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 610px;
   text-align: center;
   font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
   background-color: hsl(210,50%,20%);
-	 background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+	 background: url(bg.png), linear-gradient(90deg, #44429C, #605FB2, #8987CE);
 	}
 
 .txt[contenteditable] {
@@ -58,66 +58,8 @@ body {
 #background{
   background-color: #336699; /* For browsers that do not support gradients
 }*/
-
-main{
-  height: 250px;
-  display: flex;
-}
-.cuadro1{
-  display: flex;
-  align-items: flex-start;
-  margin-top: 100px;
-  width: 33%;
-  justify-content: flex-end;
-}
-
-.player1{/*texto jugador 1*/
-  text-align: center;
-  color: #FFFFFF;
-  justify-content: center;
-}
-/*Tiempo */
-.cuadro_centro{
+nav{
   display: flex;
   align-items: center;
-  margin-top: 100px;
-  height: 33%;
-  justify-content: flex-end;
-}
-.timer{/*texto jugador 1*/
-  text-align: center;
-  color: #FFFFFF;
   justify-content: center;
-}
-.tiempo{
-  width: 25px;
-  height: 20px;
-}
-.menos{
-  background-color: #E50029;
-}
-.mas{
-  background-color: #F4DD00;
-}
-
-.cuadro3{
-  display: flex;
-  align-items: baseline;
-  margin-top: 100px;
-  height: 33%;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.player2{/*texto jugador 2*/
-  text-align: center;
-  color: #FFFFFF;
-  justify-content: center;
-}
-
-.cuadro_abajo{
-  float: left;
-  height: 33%;
-  width: 100%;
-  margin-top: 250px;
 }
